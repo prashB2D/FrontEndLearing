@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 800px;
+            width: 600px;
+            border: 2px solid;
+            /* by defoult row */
+            display: flex; 
+            flex-direction:  column-reverse;
+            justify-content: center;
+            justify-content: space-evenly;
+             /* justify-content: space-around; */
+             /* justify-content: space-between; */
+        }
+        .box{
+            height: 50px;
+            width: 100px;
+            border: 2px solid;
+        }
+        #t{
+            background-color: rgb(11, 201, 33);
+        }
+        #t{
+            background-color: rgb(47, 24, 162);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class ="box" id="t">box1</div>
+        <div class ="box">box2</div>
+        
+        <div class ="box">box3</div>
+        <div class ="box">box4</div>
+    </div>
+</body>
+</html>
