@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Select Your Seats</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="seat-selection-container">
+    <h1>Select Your Seats</h1>
+
+    <!-- Screen indicator -->
+    <div class="screen">
+      <div class="screen-curve"></div>
+      <p>SCREEN THIS WAY</p>
+    </div>
+
+    <!-- Seats will be generated here by JS -->
+    <div class="seat-grid" id="seatGrid"></div>
+
+    <!-- Legend -->
+    <div class="legend">
+      <div><span class="seat available"></span> Available</div>
+      <div><span class="seat selected"></span> Selected</div>
+      <div><span class="seat booked"></span> Booked</div>
+    </div>
+
+    <!-- Booking Summary -->
+    <div class="booking-summary">
+      <div class="selected-info">
+        <p><strong>Selected Seats:</strong> <span id="selectedList">None</span></p>
+        <p><strong>Total:</strong> ₹<span id="totalPrice">0</span></p>
+      </div>
+      <button class="confirm-btn" id="confirmBtn" disabled>Proceed to Pay</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

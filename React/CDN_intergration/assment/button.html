@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Button</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+    <script>
+        let p = React.createElement("p", null, "Click the button below:");
+        let btn = React.createElement("button", { onClick: () => alert("Hello from React!") }, "Click me");
+        ReactDOM.createRoot(document.body).render(React.createElement(React.Fragment, null, p, btn));
+    </script>
+</body>
+
+</html>

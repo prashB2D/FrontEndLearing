@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+    <script>
+        let form = React.createElement("form", { onSubmit: e => e.preventDefault() },
+            React.createElement("label", null, "Username: "),
+            React.createElement("input", { type: "text", name: "username" }),
+            React.createElement("br"),
+            React.createElement("label", null, "Password: "),
+            React.createElement("input", { type: "password", name: "password" }),
+            React.createElement("br"),
+            React.createElement("button", { type: "submit" }, "Submit")
+        );
+        ReactDOM.createRoot(document.body).render(form);
+    </script>
+</body>
+
+</html>

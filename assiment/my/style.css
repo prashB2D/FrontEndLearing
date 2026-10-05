@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.seat-selection-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Screen indicator */
+.screen {
+  text-align: center;
+  margin: 30px 0 40px;
+}
+
+.screen-curve {
+  height: 8px;
+  background: linear-gradient(to bottom, #444, transparent);
+  border-radius: 50% 50% 0 0;
+  margin-bottom: 8px;
+}
+
+.screen p {
+  color: #777;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+/* Seat grid */
+.seat-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.seat-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.row-label {
+  width: 24px;
+  font-weight: bold;
+  color: #666;
+  text-align: center;
+}
+
+/* Individual seat */
+.seat {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px 6px 3px 3px;
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: bold;
+  transition: transform 0.15s, background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seat.available {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.seat.available:hover {
+  transform: scale(1.15);
+  background: #cfcfcf;
+}
+
+.seat.selected {
+  background: #4caf50;
+  color: #fff;
+}
+
+.seat.booked {
+  background: #f44336;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+/* Legend */
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.legend > div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #555;
+}
+
+.legend .seat {
+  width: 20px;
+  height: 20px;
+  cursor: default;
+}
+
+/* Booking summary */
+.booking-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.selected-info p {
+  margin: 4px 0;
+  color: #333;
+}
+
+.confirm-btn {
+  padding: 12px 32px;
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.confirm-btn:hover:not(:disabled) {
+  background: #e64a19;
+}
+
+.confirm-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

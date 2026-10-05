@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+
+   <div id="box">
+      <h1 id="id1" style="background-color: black; color: white;"></h1>
+   </div>
+<!-- fase 1 -->
+<!-- adding CDN links -->
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+   <script src="inerting.js"></script>
+   <script>
+      console.log("React", React);
+      console.log("ReactDOM", ReactDOM);
+   </script>
+
+
+
+   <!-- fase 2 -->
+   <SCript>
+      // we are creting the react element using React.createElement() method
+      //-* React.createElement() method takes 3 arguments
+      let rh = React.createElement("h2", { style: { backgroundColor: "black", color: "white" } }, "i am from  react")
+      console.log(rh);
+      // We are accessing the root dom element using 
+      // -* ReactDOM.createRoot() method 
+      let rootDom = ReactDOM.createRoot(document.getElementById("box"));
+      console.log(rootDom);
+
+      // rootDom.appendChild(rh); // it will not work because react element is not a dom element so we need to use render() method to render the react element in the dom
+      rootDom.render(rh); // it will work because render() method is used to render the react element in the dom
+
+   </SCript>
+
+</body>
+
+</html>

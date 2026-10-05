@@ -1,0 +1,20 @@
+
+
+
+
+
+  
+{
+   "name":"parshu",
+   "age":20,
+   "skils":[10,2,30,40],
+   "addres":{
+    "name":"prahu",
+    "id":10,
+    "zip":1018
+   },
+   "json":"()=>{
+    return 10;
+   };",
+   
+}

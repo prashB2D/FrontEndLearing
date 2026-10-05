@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 2px solid rgb(221, 255, 0);
+            height: 600px;
+            display: grid;
+            gap: 10px 50px; 
+            /* grid-template-rows: 200px 80px 100px; */
+            grid-template-columns: 3fr 2fr 2fr;         /* in this we can spicfive that this can take this much of th spce like 2f == take 2 box spce */
+            /* grid-template-columns: repeat(4, 100px); */
+            /* grid-template-columns: repeat(5, auto); */
+           /* grid-template-columns: auto auto auto; */
+
+           /* gir rows */
+           /* grid-template-rows: 100px 150px 100px; */
+                /* grid-template-rows: 100px 100px ; */
+             /* grid-auto-flow: column;    by default it is row */
+            /* gap: 10px; */
+          /* grid-auto-rows: 100px; */
+          /* grid-auto-rows: 60px; */
+          grid-auto-columns: minmax(150px, auto);
+         justify-content: center;
+         /* align-content: center;  ; */
+         justify-items: center;
+         /* align-items: center; */
+
+        }
+        /* .box{
+            background-color: aqua;
+            border: 2px solid black; 
+            height: 100px;
+        } */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       .box{
+           background-color: aqua;
+            border: 2px solid black; 
+            /* height: 100px; */
+        }
+
+        
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="box1" class="box">Box 1</div>
+        <div id="box2" class="box">Box 2</div>
+        <div id="box3" class="box">Box 3</div>
+        <div id="box4" class="box">Box 4</div>
+        <div id="box5" class="box">Box 5</div>
+        <div id="box6" class="box">Box 6</div>
+        <div id="box7" class="box">Box 7</div>
+        <div id="box8" class="box">Box 8</div>
+        <div id="box9" class="box">Box 9</div>
+        <div id="box10" class="box">Box 10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* background-color: blue; */
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-color: #000; */
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs8cx0vdBaqBcgzZ0tgvCnUyCr1YvDFVL2oe1rth-LjA&s=10);
+            background-blend-mode: multiply;
+            font-family: Arial, sans-serif;
+
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        nav {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 0 20px;
+            height: 100px;
+        }
+
+        .left-nav {
+            /* background-color: rgb(255, 30, 0); */
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 0 20px;
+            height: 100%;
+        }
+
+        .left-nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .right-nav {
+            /* background-color: rgb(0, 255, 30); */
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 20px;
+            height: 100%;
+        }
+
+        .right-nav ul {
+            display: flex;
+            gap: 10px;
+            list-style: none;
+        }
+
+        button {
+            padding: 10px 16px;
+            border: none;
+            cursor: pointer;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+
+        footer {
+            width: 100%;
+            min-height: 100px;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+            color: white;
+        }
+
+        footer>div {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .contraner {
+            width: 100%;
+            max-width: 960px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            align-items: flex-start;
+            margin: 0 auto;
+
+
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            flex: 1 1 240px;
+            min-width: 240px;
+            max-width: 280px;
+            min-height: 260px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 12px;
+            padding: 20px;
+            /* border-radius: 16px; */
+            box-shadow: 0 10px 24px rgba(255, 255, 255, 0.12);
+            text-align: left;
+            transform: translate(50px, 100px);
+            box-shadow: 10px 10px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        /* .box3 {
+            transform: translate(0px, 0px);
+            transform: scale(20%);
+            transition: all 0.2s ease-in-out; 
+           
+        }  */
+        .contraner :hover {
+            /* transform: translate(0px, 0px); */
+            transform: scale(120%);
+            transition: all 0.2s;
+        }
+
+        .main-text :hover {
+            transform: scale(120%);
+            /* background-color: rgb(0, 209, 246); */
+            transition: all .2s;
+        }
+
+
+        .box1 {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .box2 {
+            background-color: rgb(0, 209, 246);
+        }
+
+        .box3 {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .main-text {
+            color: white;
+            text-align: center;
+        }
+
+        #image1,
+        #image2,
+        #image3 {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            /* border-radius: 12px; */
+        }
+
+        .box1 h5,
+        .box2 h5,
+        .box3 h5 {
+            margin: 0;
+        }
+
+        .box1 p,
+        .box2 p,
+        .box3 p {
+            margin: 0;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left-nav">
+                <h1>demo </h1>
+                <ul>
+                    <li>home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="right-nav">
+                <ul>
+                    <li><button>Sign Up</button></li>
+                    <li><button id="button">Sign Up</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <div class="main-text">
+                <h1>Welcome to our creative showcase</h1>
+                <h5>Discover modern designs, polished layouts, and responsive cards built for every screen.</h5>
+                <button class="batz" style="background-color: rgb(0, 209, 246);">Get Started</button>
+            </div>
+        </div>
+        <div class="contraner">
+            <div class="box1">
+                <img id="image1"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGIf2xqizh_upMUNvKT0M_8H-ECPPdC-n_SYedkkYTPQ&s=10"
+                    alt="Profile image of designer">
+                <h5>Creative Concept</h5>
+                <p>Develop clean visuals and clear messaging for every project, with elegance and ease.</p>
+
+            </div>
+            <div class="box2">
+                <img id='image2'
+                    src="https://dehraflicks.com/wp-content/uploads/2025/07/money-rupees-icon-bg-png-dehraflicks.png"
+                    alt="Icon representing value and growth">
+
+                <h5>Growth Strategy</h5>
+                <p>Create value-driven solutions with a strong focus on user impact and measurable results.</p>
+            </div>
+            <div class="box3">
+                <img id='image3'
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGIf2xqizh_upMUNvKT0M_8H-ECPPdC-n_SYedkkYTPQ&s=10"
+                    alt="Overview illustration of a project">
+                <h5>Modern Experience</h5>
+                <p>Deliver polished layouts that adapt beautifully across devices and keep users engaged.</p>
+            </div>
+        </div>
+
+    </main>
+    <footer id="re">
+        <div>
+            <h1>Ready to build something great together?</h1>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+    <script>
+        let r1 = React.createElement("tr", null, React.createElement("td", null, "Prashu"), React.createElement("td", null, "24"));
+        let r2 = React.createElement("tr", null, React.createElement("td", null, "yashu"), React.createElement("td", null, "22"));
+        let h = React.createElement("tr", null, React.createElement("th", null, "Name"), React.createElement("th", null, "Age"));
+        let table = React.createElement("table", { border: "1" }, React.createElement("thead", null, h), React.createElement("tbody", null, r1, r2));
+        ReactDOM.createRoot(document.body).render(table);
+    </script>
+</body>
+
+</html>
